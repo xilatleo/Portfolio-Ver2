@@ -2,6 +2,7 @@ const useStyles = () => ({
     root: {
       padding: 3,
       height: 500,
+      width: 500,
       textAlign: 'center'
     },
     contactContainer: {

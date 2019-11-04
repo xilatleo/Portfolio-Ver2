@@ -1,0 +1,181 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script>
+        function DateCount() {
+            today = new Date()
+            Bday = new Date(document.live.age.value)
+
+            timeOldMilliSecs = (today.getTime() - Bday.getTime());
+
+
+            milSecPerDay = 24 * 60 * 60 * 1000;
+            dayResult = timeOldMilliSecs / milSecPerDay;
+            dayOld = Math.floor(dayResult);
+            timeLeft1 = dayResult - dayOld;
+
+            hourResult = timeLeft1 * 24;
+            hourOld = Math.floor(hourResult);
+            timeLeft2 = hourResult - hourOld;
+
+            minResult = timeLeft2 * 60;
+            minOld = Math.floor(minResult);
+
+            document.live.result1.value = dayOld;
+            document.live.result2.value = hourOld;
+            document.live.result3.value = minOld;
+
+
+
+        }
+
+
+    </script>
+    <style>
+        .title {
+            text-align: center;
+            margin: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #FF6F61;
+        }
+
+        h2,h3 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 20px;
+            border: 2px dashed #6B5B95;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+        }
+
+        .btn {
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hrDivide {
+            margin-top: 30px;
+            border: 2px solid #5A3E36;
+            width: 20%;
+        }
+        #luv {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 20px;
+            border: 2px dashed #6B5B95;
+            border-radius: 5px;
+            background-color: #CE5B78;
+            color: white;
+            padding: 20px;
+            width: 30%;
+        }
+        #nameperson1, #nameperson2 {
+            border: none;
+            background-color: #CE5B78;
+            color: #F1EA7F;
+            text-align: center;
+            width:50px;
+        }
+        #resultbox {
+            width: 100px;
+            text-align: center;
+            background-color: #CE5B78;
+            color: aquamarine;
+            font-size:25px;
+            border:none;
+        }
+        footer {
+            grid-column: span 3;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: lighter;
+            margin-top: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="title">Simple Date Count App</p>
+    <h3>
+        Please enter your DOB. This simple date count will give you the amount of time that you have been living on earth until now
+    </h3>
+    <div class="container">
+        <form name="live">
+            <p>Please enter your DOB: <input type="text" name="age" value=""></p>
+            <input type="button" name="start" value="Convert" class="btn btn-primary" onclick="DateCount(this.form)">
+            <input type="reset" name="resetb" class="btn btn-secondary" value="Reset Age">
+
+
+            <p>Days lived: <input type="text" name="result1" value=""></p>
+            <p>Hours lived: <input type="text" name="result2" value=""></p>
+            <p>Mins lived: <input type="text" name="result3" value=""></p>
+        </form>
+
+    </div>
+
+    <hr class="hrDivide" />
+    <p class="title">Love Days</p>
+    <h2>This app below will give you the amount of days you and your love one has been together!</h2>
+    <h3>Please enter person 1 and person 2 name</h3>
+    <form name="loveinfo" id="luv">
+        <p>Person 1: <input type="text" id="name1" /></p>
+        <p>Person 2: <input type="text" id="name2" /></p>
+        <p>First Date: <input type="text" name="date" value="" /></p>
+
+        <input type="button" name="count" value="Count" class="btn btn-primary" onclick="loveCount(this.form)">
+        <input type="reset" name="reset" class="btn btn-secondary" value="Reset Count">
+
+        <p><input type="text" id="nameperson1" /> and <input type="text" id="nameperson2" /></p>
+        <p>Has been together for <input id="resultbox" type="text" name="result" value="" /> Days</p>
+        <div id="music">
+            <audio loop autoplay controls>Your browser does not support the audio element.</audio>
+        </div>
+        <footer>Thank you for your love 💕</footer>
+    </form>
+
+    <script>
+        function loveCount() {
+            let p1 = document.getElementById('name1').value;
+            let p2 = document.getElementById('name2').value;
+
+            let np1 = document.getElementById('nameperson1');
+            let np2 = document.getElementById('nameperson2');
+            np1.value = p1;
+            np2.value = p2;
+
+            today = new Date();
+            firstDate = new Date(document.loveinfo.date.value);
+
+            timeTogetherMilSecs = (today.getTime() - firstDate.getTime());
+
+            milSecPerDay = 24 * 60 * 60 * 1000;
+
+            daysTogether = Math.floor(timeTogetherMilSecs / milSecPerDay);
+
+            document.loveinfo.result.value = daysTogether;
+
+            //Music
+            music = ['ido', 'noinaycoanh', 'nguoiamphu'];
+            document.querySelector("audio").setAttribute("src", `music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

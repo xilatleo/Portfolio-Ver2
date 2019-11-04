@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Paint App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 50px;
+            text-align: center;
+        }
+
+        canvas {
+            border: 2px solid #6B5B95;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        .btn {
+            border: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Paint App</h2>
+        <script src="/js/paint.js"></script>
+        <div class="btn btn-primary" id="red" onclick="setColor('red')">Red</div>
+        <div class="btn btn-primary" id="blue" onclick="setColor('blue')">Blue</div>
+        <div class="btn btn-primary" id="black" onclick="setColor('black')">Black</div>
+    </div>   
+    
+    
+
+</body>
+</html>
