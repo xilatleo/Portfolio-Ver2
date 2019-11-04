@@ -9,11 +9,14 @@
   overflow-x: hidden;
   
 }
-a {
+.aButton {
   text-decoration: none;
   color: white;
 }
-
+.aButton:hover {
+  text-decoration: none;
+  
+}
 nav {
  text-align: right;
 }

@@ -12,6 +12,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import PersonIcon from "@material-ui/icons/Person";
 import Grid from "@material-ui/core/Grid";
 import EmailIcon from "@material-ui/icons/Email";
+import DvrIcon from '@material-ui/icons/Dvr';
 
 
 function App() {
@@ -29,11 +30,11 @@ function App() {
         <div className="container">
           <br />
           <Grid container spacing={2}>
-            <Grid item md={6}>
+            <Grid item md={5}>
               <h2 id="brand">Quancoder</h2>
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={7}>
               <nav>
                 <ul>
                   <Button
@@ -42,7 +43,7 @@ function App() {
                     className={classes.button}
                     startIcon={<HomeIcon />}
                   >
-                    <Link to="/">Home</Link>
+                    <Link to="/" className='aButton'>Home</Link>
                   </Button>
                   <Button
                     variant="contained"
@@ -50,15 +51,16 @@ function App() {
                     className={classes.button}
                     startIcon={<PersonIcon />}
                   >
-                    <Link to="/about">About</Link>
+                    <Link to="/about"  className='aButton'>About</Link>
                   </Button>
                   <Button
                     variant="contained"
                     color="secondary"
                     className={classes.button}
+                    startIcon={<DvrIcon />}
                   >
-                    <i className="material-icons">assignment</i>
-                    <Link to="/project">My Projects</Link>
+                    
+                    <Link to="/project"  className='aButton'>My Projects</Link>
                   </Button>
                   <Button
                     variant="contained"
@@ -66,7 +68,7 @@ function App() {
                     className={classes.button}
                     startIcon={<EmailIcon />}
                   >
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact"  className='aButton'>Contact</Link>
                   </Button>
                 </ul>
               </nav>
