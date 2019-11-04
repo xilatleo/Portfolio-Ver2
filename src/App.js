@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import About from "./components/About/index";
 import Home from "./components/Home/index";
 import Contact from "./components/Contact/index";
@@ -13,6 +13,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import Grid from "@material-ui/core/Grid";
 import EmailIcon from "@material-ui/icons/Email";
 
+
 function App() {
   const useStyles = makeStyles(theme => ({
     button: {
@@ -21,6 +22,7 @@ function App() {
   }));
 
   const classes = useStyles();
+
   return (
     <Router>
       <div className="App">
@@ -72,6 +74,8 @@ function App() {
           </Grid>
         </div>
 
+        
+        
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
@@ -79,6 +83,7 @@ function App() {
           <Route path="/project" component={Project} />
           <Route component={NotFound} />
         </Switch>
+       
       </div>
     </Router>
   );

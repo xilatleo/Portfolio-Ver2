@@ -1,0 +1,16 @@
+.h1Text {
+    animation: type 2s step(58);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 100%;
+    }
+}
