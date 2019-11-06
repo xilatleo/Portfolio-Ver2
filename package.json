@@ -17,6 +17,7 @@
     "react-spring": "^8.0.27",
     "react-timeline-scribble": "^1.0.14",
     "react-typing-animation": "^1.6.2",
+    "react-typist": "^2.0.5",
     "reactstrap": "^8.1.1"
   },
   "scripts": {

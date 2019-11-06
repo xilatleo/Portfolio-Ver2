@@ -15,7 +15,7 @@ function About() {
   const useStyles = makeStyles({
     card: {
       maxWidth: 500,
-      height: 750
+      height: 710
     },
     CardActions: {
       display: "flex",
@@ -23,6 +23,7 @@ function About() {
     },
     root: {
       height: "100%",
+      minWidth: 550,
       padding: 20,
       overflowY: "scroll"
     },
@@ -61,15 +62,11 @@ function About() {
                 image="https://i.imgur.com/IrkqhGZ.jpg?1"
                 title="Personal photo"
               />
-              <CardContent>
+              <CardContent style={{textAlign:'center'}}>
                 <Typography gutterBottom variant="h4" component="h2">
                   Quan Trinh
                 </Typography>
-                <Typography variant="body1" color="textSecondary" component="p">
-                  Hi, my name is Quan Trinh. I'm Fullstack Web Developer. Thank
-                  you for visiting my website. In this page you will see all of
-                  my eduction and qualifications
-                </Typography>
+                
               </CardContent>
             </CardActionArea>
             <CardActions className={classes.CardActions}>
@@ -97,12 +94,12 @@ function About() {
             <Typography
               variant="h3"
               component="h3"
-              style={{ textAlign: "center" }}
+              style={{ textAlign: "center", marginBottom: 30 }}
             >
               Resume
               <Button
                 variant="contained"
-                style={{ left: 300 }}
+                style={{ left: 100 }}
                 href="http://quancoder.com/Resume.pdf"
               >
                 PDF version

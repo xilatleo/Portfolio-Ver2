@@ -4,25 +4,26 @@ import { withStyles } from "@material-ui/styles";
 import { Card, CardImg, CardTitle, CardText } from "reactstrap";
 import Grid from "@material-ui/core/Grid";
 import AbsoluteWrapper from "./../Wrapper/AbsoluteWrapper";
+
 class project extends Component {
   render() {
     const { classes } = this.props;
     return (
       <AbsoluteWrapper>
         <div className={classes.projectContainer}>
-          <Grid container spacing={2}>
+          <Grid container spacing={5}>
             <Grid item md={4}>
               <a href="http://quancoder.com/codeEditor.html" target="_blank">
                 <Card body outline color="secondary" className={classes.border}>
                   <CardImg
                     top
-                    width="80"
+                    width="100"
                     height="200px"
                     src="https://i.imgur.com/TI2lRc0.jpg"
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Simple Code Editor</h2>
+                    <h4>Simple Code Editor</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     Simpler version of Code Editor
@@ -42,7 +43,7 @@ class project extends Component {
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Date Count App</h2>
+                    <h4>Date Count App</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     Simple Date Counting App using Bootstrap and jQuery
@@ -51,7 +52,7 @@ class project extends Component {
               </a>
             </Grid>
 
-            <Grid item md={4}>
+            <Grid item  md={4}>
               <a href="http://sf.quancoder.com/" target="_blank">
                 <Card body outline color="success" className={classes.border}>
                   <CardImg
@@ -62,7 +63,7 @@ class project extends Component {
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Manga Store Front</h2>
+                    <h4>Manga Store Front</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     Manga Ecommerce merchandise store built with .NET MVC
@@ -72,7 +73,7 @@ class project extends Component {
             </Grid>
           </Grid>
 
-          <Grid container spacing={2}>
+          <Grid container spacing={5}>
             <Grid item md={4}>
               <a href="http://quancoder.com/painApp.html" target="_blank">
                 <Card body outline color="info" className={classes.border}>
@@ -84,7 +85,7 @@ class project extends Component {
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Paint App</h2>
+                    <h4>Paint App</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     This app allow user choose between 3 colors and draw on a
@@ -105,7 +106,7 @@ class project extends Component {
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Quan's Jobboard</h2>
+                    <h4>Quan's Jobboard</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     Final project at Centriq - Utilized .NET MVC, Bootstrap,
@@ -129,7 +130,7 @@ class project extends Component {
                     alt="Card image cap"
                   />
                   <CardTitle className={classes.CardTitle}>
-                    <h2>Product Management</h2>
+                    <h4>Product Management</h4>
                   </CardTitle>
                   <CardText className={classes.CardTitle}>
                     Simple CRUD React - Redux product management app with React,

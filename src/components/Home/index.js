@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import Typing from "react-typing-animation";
+import Typist from 'react-typist';
 import Button from "@material-ui/core/Button";
 import AbsoluteWrapper from "./../Wrapper/AbsoluteWrapper";
 import "./styles.css";
@@ -39,15 +39,14 @@ function Home() {
             </Typography>
             <hr />
             <Typography component="p" style={{ height: "50%", marginTop: 50 }}>
-              <Typing speed={50}>
+              <Typist cursor={{show: false}} avgTypingDelay= {50}>
                 <h1>
                   Hi, My name is Quan Trinh. I'm a Fullstack Web Developer. You
                   are at my website where I share my portfolio projects with the
                   world. Please enjoy your time here!
-                </h1>
-                <Typing />
+                </h1>                
                 <i class="fas fa-arrow-circle-down"></i>
-              </Typing>
+              </Typist>
             </Typography>
             <div
               style={{

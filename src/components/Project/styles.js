@@ -5,7 +5,7 @@ const useStyles = () => ({
         
     },
     border: {
-        height: 380,
+       minHeight : 420,
        
     },
     CardTitle: {
