@@ -16,6 +16,9 @@ const useStyles = () => ({
       margin: 10,
       width: 60,
       height: 60
+    },
+    pText:  {
+      fontSize: 25
     }
   });
 

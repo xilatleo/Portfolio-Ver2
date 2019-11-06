@@ -18,8 +18,8 @@ function Home() {
     root: {
       margin: 100,
       padding: 20,
-      width: "50%",
-      height: 500
+      minwidth: 200,
+      minheight: 500
     }
   });
   const classes = useStyles();
@@ -27,8 +27,9 @@ function Home() {
   return (
     <AbsoluteWrapper>
       <div className={classes.homepageContainer}>
-        <Grid container justify="center" alignItems="center">
-          <Paper className={classes.root}>
+        <Grid container justify="center" alignItems="center" id='grid'>
+          <Grid item xs={12}>
+          <Paper className={classes.root} id='root'>
             <Typography variant="h5" component="h3">
               <Avatar
                 alt="Quan Trinh"
@@ -73,7 +74,9 @@ function Home() {
               </Button>
             </div>
           </Paper>
-        </Grid>
+        
+          </Grid>
+          </Grid>
       </div>
     </AbsoluteWrapper>
   );

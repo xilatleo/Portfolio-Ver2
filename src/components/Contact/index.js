@@ -9,14 +9,15 @@ import Avatar from "@material-ui/core/Avatar";
 import useStyles from "./styles";
 import { withStyles } from "@material-ui/styles";
 import AbsoluteWrapper from "./../Wrapper/AbsoluteWrapper";
+import './styles.css';
 
 class Contact extends Component {
   render() {
     const { classes } = this.props;
     return (
       <AbsoluteWrapper>
-        <div className={classes.contactContainer}>
-          <Paper className={classes.root}>
+        <div className={classes.contactContainer} >
+          <Paper className={classes.root} id='paper'>
             <Grid
               container
               spacing={2}
@@ -42,20 +43,24 @@ class Contact extends Component {
               </Grid>
             </Grid>
             <hr />
+            <div id='bodyContent'>
             <Typography
               variant="h5"
               component="p"
               style={{ marginTop: 10, marginBottom: 20 }}
+              
             >
               Feel free to get in touch with me at
             </Typography>
             <MailOutlineIcon
               style={{ color: "rgb(77, 171, 247)", fontSize: 50 }}
             />
-            <p style={{ fontSize: 25 }}>quan.h.trinh@outlook.com</p>
+            <p id='email' className= {classes.pText} >quan.h.trinh@outlook.com</p>
             <p>or</p>
-            <PhoneIcon style={{ color: "#f50057", fontSize: 50 }} />{" "}
-            <p style={{ fontSize: 25 }}>(562) 331 4150</p>
+            <PhoneIcon style={{ color: "#f50057", fontSize: 50 }} />
+            <p id='phone' className= {classes.pText}>(562) 331 4150</p>
+            </div>
+            
           </Paper>
         </div>
       </AbsoluteWrapper>

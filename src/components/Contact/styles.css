@@ -1,0 +1,12 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+   #paper {       
+       max-width: 100%;
+       max-height: 100%;
+   }
+   #phone, #email {
+    font-size: 20px;
+   }
+   
+}

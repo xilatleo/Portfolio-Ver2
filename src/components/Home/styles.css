@@ -6,6 +6,7 @@
     border-right: 4px solid black
 }
 
+
 @keyframes type {
     0% {
         width: 0ch;
@@ -13,4 +14,14 @@
     100% {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+   #root {
+       margin: 5px;
+       padding: 5px;
+       max-width: 100%;
+   }
+  
 }

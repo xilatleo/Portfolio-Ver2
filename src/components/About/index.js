@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import { Timeline, Event } from "react-timeline-scribble";
 import AbsoluteWrapper from "./../Wrapper/AbsoluteWrapper";
+import './styles.css'
 function About() {
   const useStyles = makeStyles({
     card: {
@@ -51,7 +52,7 @@ function About() {
   return (
     <AbsoluteWrapper>
       <Grid container spacing={2} style={{ marginTop: 50 }}>
-        <Grid item md={5}>
+        <Grid item md={5} xs={12}>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -89,8 +90,8 @@ function About() {
           </Card>
         </Grid>
 
-        <Grid item md={6} className={classes.resume}>
-          <Paper className={classes.root}>
+        <Grid item md={6}  xs={12} className={classes.resume}>
+          <Paper className={classes.root}  id='resume'>
             <Typography
               variant="h3"
               component="h3"
@@ -101,6 +102,7 @@ function About() {
                 variant="contained"
                 style={{ left: 100 }}
                 href="http://quancoder.com/Resume.pdf"
+                id = 'pdfVersion'
               >
                 PDF version
               </Button>
@@ -128,7 +130,7 @@ function About() {
               <div>
                 <h2>TECHNICAL SKILLS </h2>
                 <Grid container spacing={5} className={classes.skillContainer}>
-                  <Grid item md={3}>
+                  <Grid item md={3} xs={12}>
                     <Card className={classes.cardItem}>
                       <CardActionArea className={classes.CardActionAreaResume}>
                         <div className={classes.itag}>
@@ -161,7 +163,7 @@ function About() {
                     </Card>
                   </Grid>
 
-                  <Grid item md={3}>
+                  <Grid item md={3}  xs={12}>
                     <Card className={classes.cardItem}>
                       <CardActionArea className={classes.CardActionAreaResume}>
                         <div className={classes.itag}>
@@ -191,7 +193,7 @@ function About() {
                     </Card>
                   </Grid>
 
-                  <Grid item md={3}>
+                  <Grid item md={3}  xs={12}>
                     <Card className={classes.cardItem}>
                       <CardActionArea className={classes.CardActionAreaResume}>
                         <div className={classes.itag}>
