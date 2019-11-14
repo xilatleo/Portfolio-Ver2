@@ -16,7 +16,7 @@ class Contact extends Component {
     const { classes } = this.props;
     return (
       <AbsoluteWrapper>
-        <div className={classes.contactContainer} >
+        <div className={classes.contactContainer} id='container'>
           <Paper className={classes.root} id='paper'>
             <Grid
               container

@@ -155,8 +155,7 @@ function About() {
                             component="p"
                           >
                             HTML5, JavaScript, jQuery, jQueryUI, CSS3,
-                            Responsive/Mobile Web Development, Bootstrap,
-                            ReactJS
+                            Bootstrap, ReactJS, Redux 
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -216,8 +215,7 @@ function About() {
                             color="textSecondary"
                             component="p"
                           >
-                            ADO.NET, SQL, SQL Server, SSMSE INDEPENDENT
-                            DEVELOPMENT PROJECTS
+                            ADO.NET, SQL, SQL Server, MongoDB, Nodejs, Express
                           </Typography>
                         </CardContent>
                       </CardActionArea>

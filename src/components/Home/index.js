@@ -8,6 +8,7 @@ import Typist from 'react-typist';
 import Button from "@material-ui/core/Button";
 import AbsoluteWrapper from "./../Wrapper/AbsoluteWrapper";
 import "./styles.css";
+
 function Home() {
   const useStyles = makeStyles({
     bigAvatar: {
@@ -18,8 +19,7 @@ function Home() {
     root: {
       margin: 100,
       padding: 20,
-      minwidth: 200,
-      minheight: 500
+            
     }
   });
   const classes = useStyles();
@@ -27,8 +27,8 @@ function Home() {
   return (
     <AbsoluteWrapper>
       <div className={classes.homepageContainer}>
-        <Grid container justify="center" alignItems="center" id='grid'>
-          <Grid item xs={12}>
+        <Grid container justify="center" alignItems="center" >
+          <Grid item xs={12} md={6}>
           <Paper className={classes.root} id='root'>
             <Typography variant="h5" component="h3">
               <Avatar

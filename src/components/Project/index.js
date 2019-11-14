@@ -140,6 +140,74 @@ class project extends Component {
               </a>
             </Grid>
           </Grid>
+          <Grid container spacing={5}>
+          <Grid item md={4}>
+              <a
+                href="http://dragonballs.herokuapp.com/"
+                target="_blank"
+              >
+                <Card body outline color="success" className={classes.border}>
+                  <CardImg
+                    top
+                    width="100"
+                    height="200px"
+                    src="https://i.imgur.com/zLhlBrA.jpg"
+                    alt="Manga API"
+                  />
+                  <CardTitle className={classes.CardTitle}>
+                    <h4>Manga API</h4>
+                  </CardTitle>
+                  <CardText className={classes.CardTitle}>
+                    Simple REST API with Nodejs, Express, Ejs, MongoDb
+                  </CardText>
+                </Card>
+              </a>
+            </Grid>
+            <Grid item md={4}>
+              <a
+                href="http://warm-coast-01131.herokuapp.com/"
+                target="_blank"
+              >
+                <Card body outline color="info" className={classes.border}>
+                  <CardImg
+                    top
+                    width="100"
+                    height="200px"
+                    src="https://i.imgur.com/Ni6z8P2.jpg"
+                    alt="Newsletter Signup"
+                  />
+                  <CardTitle className={classes.CardTitle}>
+                    <h4>Newsletter Signup</h4>
+                  </CardTitle>
+                  <CardText className={classes.CardTitle}>
+                    Newsletter Signup with Nodejs, express, Mailchimp, Heroku
+                  </CardText>
+                </Card>
+              </a>
+            </Grid>
+            <Grid item md={4}>
+              <a
+                href="http://warm-coast-01131.herokuapp.com/"
+                target="_blank"
+              >
+                <Card body outline color="warning" className={classes.border}>
+                  <CardImg
+                    top
+                    width="100"
+                    height="200px"
+                    src="https://i.imgur.com/T8W2Bx7.png"
+                    alt="No img"
+                  />
+                  <CardTitle className={classes.CardTitle}>
+                    <h4>Future Project goes here</h4>
+                  </CardTitle>
+                  <CardText className={classes.CardTitle}>
+                    Waiting for Update...
+                  </CardText>
+                </Card>
+              </a>
+            </Grid>
+          </Grid>
         </div>
       </AbsoluteWrapper>
     );

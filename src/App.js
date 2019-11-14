@@ -92,6 +92,7 @@ const App = () => {
               </nav>
             </Grid>
           </Grid>
+          
         </div>
         {transition.map(({ item, props, key }) => (
           <animated.div key={key} style={props}>
@@ -104,6 +105,8 @@ const App = () => {
             </Switch>
           </animated.div>
         ))}
+      
+  
       </div>
     
   );

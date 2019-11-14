@@ -6,6 +6,9 @@ const useStyles = () => ({
     },
     border: {
        minHeight : 420,
+       '&:hover': {
+            border: 'solid 3px'
+       }
        
     },
     CardTitle: {
