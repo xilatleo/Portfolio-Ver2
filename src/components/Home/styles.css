@@ -128,3 +128,15 @@ ul.line li:nth-child(3n+3){
     text-align: center;
     margin: 20px;
 }
+.viewContainer{
+    position: absolute;
+    bottom: 20px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewButton {
+    margin-right: 10px;
+   
+}
