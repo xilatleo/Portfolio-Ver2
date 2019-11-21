@@ -5,7 +5,7 @@ const useStyles = () => ({
         
     },
     border: {
-       minHeight : 420,
+       minHeight : 450,
        '&:hover': {
             border: 'solid 3px'
        }

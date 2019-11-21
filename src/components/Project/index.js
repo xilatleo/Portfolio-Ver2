@@ -201,7 +201,7 @@ class project extends Component {
                   <h4>Product Management</h4>
                 </CardTitle>
                 <CardText className={classes.CardTitle}>
-                  Simple CRUD React - Redux product management app with React,
+                  Redux product management app with React,
                   React Router, Redux, Redux thunk, and MockApi
                 </CardText>
 
@@ -320,9 +320,9 @@ class project extends Component {
                   <a
                     href="https://github.com/xilatleo/YoutubeClone"
                     target="_blank"
-                    className="btn btn-danger btn-sm viewButton"
+                    className="btn btn-danger btn-sm viewButton disabled"
                   >
-                    View Code
+                    Private Code
                   </a>
                 </div>
               </Card>
